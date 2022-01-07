@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="score.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <div class="card  container .col-md-4 w-50" style="width:18rem;">
+      <img
+        class="card-img-top"
+        src="pic.jpg"
+        alt="Card image cap"
+        style="width:70%"
+        
+        />
+        <div id="latest_scores" class="latest-scores d-inline">Latest scores: </div>
+      
+      <div class="card-body">
+        <p><b>Ping Pong Score Keeper</b></p>
+        <hr />
+        <b><h1 id="first">0</h1></b> <h1>to</h1>
+          
+          <h1 id="second"><b>0</b></h1></b>
+        <p class="card-text">Use the buttons below to keep score</p>
+    </select>
+    <label for="playingTo"><b>Playing To</b></label>
+    <select class="form-control form-control-sm w-25 d-inline" id="playingTo">
+        
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    <br>
+    <br>
+    <div class="d-inline">
+    <button type="button" id="butt1" class="btn btn-lg btn-primary ">
+          +1 Player One
+        </button>
+        <button type="button" id="butt2" class="btn btn-lg btn-success  ;">
+          +1 Player Two
+        </button>
+        <!-- .btn-block -->
+        <button type="button" id="butt3" class="btn btn-lg btn-danger">Reset</button>
+      </div>
+
+    </div>
+
+</div>
+    <script src="score.js"></script>
+  </body>
+</html>
